@@ -1,0 +1,23 @@
+{
+  "name": "reach",
+  "version": "1.0.0",
+  "description": "Module for the reach bulk sms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016"
+  },
+  "keywords": [
+    "library",
+    "sms"
+  ],
+  "author": "Reach Team",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "randomstring": "^1.1.5"
+  }
+}
