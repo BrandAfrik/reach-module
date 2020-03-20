@@ -4,7 +4,7 @@ const axios = require('axios').default;
 const randomstring = require("randomstring");
 
 /**
-*
+*Reach Class
 **/
 class Reach {
 	
@@ -62,6 +62,19 @@ class Reach {
 		})
 	}
 	
+	//Method to call payment api
+	callEpay(merchant_key, app_id, app_secret) {
+		let headers = {"Content-Type":"application/json"};
+
+		let data = {
+			"merchant_key":merchant_key,
+			"app_id":app_id,
+			"app_secret":app_secret
+		};
+
+		this.callApi("post", "https://epaygh.com/api/v1/token", headers, data);
+	}
+
 	
 	//Check SMS Status
 	checkSms() {
@@ -94,6 +107,11 @@ class Reach {
 		
 		//Call the Api
 		this.callApi("post", "https://api.smsglobal.com/v2/sms/", headers, data);
+	}
+
+	//Top up
+	topup() {
+		
 	}
 }
 
