@@ -97,4 +97,4 @@ class Reach {
 	}
 }
 
-module.exports = Solution;
+module.exports = Reach;
